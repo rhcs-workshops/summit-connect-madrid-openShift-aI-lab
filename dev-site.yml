@@ -3,7 +3,7 @@ runtime:
 
 site:
   title: Summit-Connect-Madrid-OpenShift-AI-lab
-  url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-aI-lab
+  url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab
   start_page: summit-connect-madrid-openShift-aI-lab::index.adoc
 
 content:
