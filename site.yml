@@ -3,7 +3,7 @@ runtime:
 
 site:
   title: Summit-Connect-Madrid-OpenShift-AI-lab
-  url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-aI-lab
+  url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab
   start_page: summit-connect-madrid-openShift-aI-lab::index.adoc
 
 content:
@@ -11,7 +11,7 @@ content:
     # - url: ./
     #   start_path: documentation
     #Change to make url parameters work EX: USER
-    - url: git@github.com:rhcs-workshops/summit-connect-madrid-openShift-aI-lab.git
+    - url: git@github.com:rhcs-workshops/summit-connect-madrid-openShift-ai-lab.git
       tags: []
       branches: [master]
       start_path: documentation
