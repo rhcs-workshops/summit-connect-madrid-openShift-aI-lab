@@ -69,13 +69,13 @@ cat /tmp/oauth.yaml | oc apply -f -
 # ##
 # oc adm policy add-cluster-role-to-user admin admin
 
-oc apply -f files/operator-openshiftai.yaml
-oc apply -f files/operator-kserver-prerequisites.yaml
+oc apply -f ./scripts/files/operator-openshiftai.yaml
+oc apply -f ./scripts/files/operator-kserver-prerequisites.yaml
 
 sleep 60
 
-oc apply -f files/datasciencecluster.yaml
+oc apply -f ./scripts/files/datasciencecluster.yaml
 
 sleep 30 
 
-sh scripts/check.sh
+sh ./scripts/check.sh
