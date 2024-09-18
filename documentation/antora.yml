@@ -1,5 +1,5 @@
-name: template-tutorial
-title: Template Tutorial
+name: summit-ocpai-lab
+title: Summit Connect Madrid - OpenShift AI
 version: master
 nav:
   - modules/ROOT/nav.adoc

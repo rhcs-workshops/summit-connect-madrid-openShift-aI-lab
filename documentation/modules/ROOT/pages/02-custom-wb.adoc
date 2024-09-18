@@ -1,0 +1,15 @@
+= Crear un custom workbench
+include::_attributes.adoc[]
+
+[#image]
+== Importar imagen personalizada
+
+
+
+[#create]
+== Crear workbench
+
+
+
+[#connect]
+== Iniciar el workbench

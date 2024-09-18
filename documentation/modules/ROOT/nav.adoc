@@ -1,7 +1,12 @@
-* xref:01-setup.adoc[1. Setup]
-** xref:01-setup.adoc#prerequisite[Prerequisites]
-** xref:01-setup.adoc#minikube[Setup Minikube]
+* xref:01-login.adoc[1. Acceder a OpenShift AI]
 
-* xref:02-deploy.adoc[2. Deploy Service]
-** xref:02-deploy.adoc#package[Build Service]
-** xref:02-deploy.adoc#deploy[Deploy Dervice]
+* xref:02-custom-wb.adoc[2. Crear custom workbench]
+** xref:02-custom-wb.adoc#image[Importar imagen]
+** xref:02-custom-wb.adoc#create[Crear workbench]
+** xref:02-custom-wb.adoc#connect[Iniciar el workbench]
+
+* xref:03-model.adoc[3. Desplegar el modelo]
+** xref:03-model.adoc#import[Importar modelo]
+** xref:03-model.adoc#deploy[Ejecutar modelo]
+
+
