@@ -9,13 +9,14 @@ Cada usuario que realice este lab, tendrá un usuario propio con el que podrá t
 == Datos del entorno
 
 Usuario: `userX`
+
 Contraseña:
 
 En una nueva ventana, accede a la siguiente URL e inicia sesión en la consola de OpenShift AI.
 
-La URL de Red Hat OpenShift AI: URL
+La URL de Red Hat OpenShift AI: `URL`
 
-Accede con las credenciales mencionadas arriba:
+Accede con las credenciales mencionadas anteriormente:
 
 image::01-login.png[]
 

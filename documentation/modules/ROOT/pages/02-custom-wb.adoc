@@ -1,15 +1,43 @@
 = Crear un custom workbench
 include::_attributes.adoc[]
 
+En OpenShift AI, un workbench es un entorno de trabajo contenerizado que se ejecuta como un pod. Los workbench incluyen una colección de liberías comunmente utilizadas en entornos de AI/ML, así como un servidor de JulyperLab.
+
+En este laboratorio se va a crear un workbench personalizado que incluya las liberías y paquetes necesarios para implementar un modelo de detección de imágenes. Para la creación de un workbench personalizado, se deberá crear e importar una imagen que contenga el entorno JupyterLab, así como cualquier software adicional necesario para desplegar el modelo.
+
 [#image]
 == Importar imagen personalizada
 
+Para importar una imagen custom, en el panel de navegación de la izquierda, accede a Settings - Notebook images y luego `Import new image`
 
+image::02-01-import.png[]
+
+Completa el formulario con los siguientes datos:
+
+* Image location: 
+* Name: 
+* Description:
+* Accelator identifier:
+
+Una vez estén todos los campos, click en `Create`.
 
 [#create]
 == Crear workbench
 
+Una vez la imagen personalizada esté subida, se creará un entorno de trabajo donde usaremos esta imagen. 
 
+Para ello, en el menú de navegación de la izquierda, accede a Data Science Projects y selecciona el proyecto `userX`.
+
+Una vez dentro del proyecto, selecciona `Create a workbench` y completa los campos con la siguiente información:
+
+* Name:
+* Image selection: 
+* Deployment size:
+* CLuster storage:
+
+El resto de campos, se pueden dejar con los valores por defecto.
 
 [#connect]
 == Iniciar el workbench
+
+Una vez se haya creado el workbench, espera a que su estado cambie a `Running`. Una vez esté corriendo, ya podemos acceder al entorno de trabajo. 
