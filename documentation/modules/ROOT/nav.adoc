@@ -2,7 +2,8 @@
 
 * xref:02-custom-wb.adoc[2. Crear custom workbench]
 ** xref:02-custom-wb.adoc#image[Importar imagen]
-** xref:02-custom-wb.adoc#create[Crear workbench]
+** xref:02-custom-wb.adoc#createproj[Crear un proyecto de Data Science]
+** xref:02-custom-wb.adoc#createwb[Crear workbench]
 ** xref:02-custom-wb.adoc#connect[Iniciar el workbench]
 
 * xref:03-model.adoc[3. Desplegar el modelo]
