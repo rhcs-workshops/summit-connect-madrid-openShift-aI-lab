@@ -84,7 +84,7 @@ image::02-09-permission.png[]
 
 * Una vez aceptado, se mostrará el servidor de JupyterLab.
 
-image::02-10-juputer-server.png[]
+image::02-10-jupyter-server.png[]
 
 
 ¡Enhorabuena¡ Ya estás listo para desplegar el modelo de AI/ML.  

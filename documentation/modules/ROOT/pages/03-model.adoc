@@ -33,5 +33,5 @@ image::03-05-restart-kernel.png[]
 
 * En cuanto el modelo termina su ejecución, se puede observar el resultado. El modelo ha evaluado los daños del accidente, mostrando el porcentaje de precisión del modelo. 
 
-image::03-05-model-results.png[]
+image::03-06-model-results.png[]
 
