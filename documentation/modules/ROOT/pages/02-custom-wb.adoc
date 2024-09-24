@@ -76,7 +76,7 @@ image::02-08-wb-running.png[]
 
 * Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI.
 
-NOTA: Si tu usuario es `user1`, accede con el usuario `user1` y contraseña `user1`.
+NOTE: Si tu usuario es `user1`, accede con el usuario `user1` y contraseña `user1`.
 
 * A continuación, se deberán aceptar los siguientes permisos.
 
@@ -85,5 +85,6 @@ image::02-09-permission.png[]
 * Una vez aceptado, se mostrará el servidor de JupyterLab.
 
 image::02-10-juputer-server.png[]
+
 
 ¡Enhorabuena¡ Ya estás listo para desplegar el modelo de AI/ML.  

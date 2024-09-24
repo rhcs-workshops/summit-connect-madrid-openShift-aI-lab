@@ -17,7 +17,7 @@ En una nueva ventana, accede a la siguiente URL e inicia sesión en la consola d
 ** Usuario: `userX`
 ** Contraseña: `userX`
 
-IMPORTANTE: Sustituir userX por el usuario que le ha sido asignado. 
+IMPORTANT: Sustituir userX por el usuario que le ha sido asignado. 
 
 image::01-01-login.png[]
 
@@ -28,5 +28,6 @@ image::01-02-warning.png[]
 * Se puede ignorar el mensaje, y continuar con el lab. Una vez autenticado, se mostrará la siguiente consola:
 
 image::01-03-dashboard.png[]
+
 
 ¡Enhorabuena! Ya estás conectado a OpenShift AI y listo para empezar el laboratorio.
