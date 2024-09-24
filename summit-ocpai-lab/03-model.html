@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Desplegar el modelo :: Summit-Connect-Madrid-OpenShift-AI-lab</title>
+    <link rel="canonical" href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab/summit-ocpai-lab/03-model.html">
+    <link rel="prev" href="02-custom-wb.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://developers.redhat.com" target="_blank"><img
+          src="../_/img/header_logo.png" height="40px" alt="Red Hat Developer Program"></a>
+      <a class="navbar-item" href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab">Summit-Connect-Madrid-OpenShift-AI-lab</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Books</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">CheatSheets</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">CheatSheet A</a>
+            <a class="navbar-item" href="#">CheatSheet B</a>
+            <a class="navbar-item" href="#">CheatSheet C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Upcoming Events</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Event A</a>
+            <a class="navbar-item" href="#">Event B</a>
+            <a class="navbar-item" href="#">Event C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">More Tutorials</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Tutorial A</a>
+            <a class="navbar-item" href="#">Tutorial B</a>
+            <a class="navbar-item" href="#">Tutorial C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="summit-ocpai-lab" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html" class=" query-params-link">Summit Connect Madrid - OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="01-login.html">1. Acceder a OpenShift AI</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-custom-wb.html">2. Crear custom workbench</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-custom-wb.html#image">Importar imagen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-custom-wb.html#createproj">Crear un proyecto de Data Science</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-custom-wb.html#createwb">Crear workbench</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="02-custom-wb.html#connect">Iniciar el workbench</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="03-model.html">3. Desplegar el modelo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#import">Importar modelo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#deploy">Ejecutar modelo</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Summit Connect Madrid - OpenShift AI</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Summit Connect Madrid - OpenShift AI</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Summit Connect Madrid - OpenShift AI</a></li>
+    <li><a href="03-model.html">3. Desplegar el modelo</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab/edit/master/documentation/modules/ROOT/pages/03-model.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Desplegar el modelo</h1>
+<div class="sect1">
+<h2 id="import"><a class="anchor" href="#import"></a>Importar modelo</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Para empezar a trabajar con el modelo de detección de imágenes, es necesario importar el repositorio de Git en el que está el código desarrollado. Para ello, hazx click en el icono de Git en el menú de navegación de la izquierda.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/03-01-git-clone.png" alt="03 01 git clone">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduce la URL del repositorio de Git:</p>
+<div class="literalblock">
+<div class="content">
+<pre>https://github.com/rhcs-workshops/summit-connect-madrid-openshift-ai-lab.git</pre>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/03-02-repo.png" alt="03 02 repo">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Una vez el repositorio esté importado en el servidor de JupyterLab, accede a la carpeta <code>lab</code> y abre el modelo llamado <code>accident-recog.ipynb</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/03-03-model.png" alt="03 03 model">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="deploy"><a class="anchor" href="#deploy"></a>Ejecutar modelo</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>El modelo está desarrollado en un Notebook de Jupyter. El modelo que se va a utilizar en este laboratorio se basa en el modelo <code>YOLOv8</code>, que se puede encontrar online en <a href="https://yolov8.com/">yolo8</a>.</p>
+</li>
+<li>
+<p>Para ejecutar el modelo, si nunca se han ejecutado las celdas del Notebook, haz click en <code>Restart kernel and Run all Cells</code> para ejecutar el modelo, y obtener el resultado.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/03-04-run-model.png" alt="03 04 run model">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Click en <code>Restart</code>, y espera hasta que el modelo termine de ejecutar.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/03-05-restart-kernel.png" alt="03 05 restart kernel">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En cuanto el modelo termina su ejecución, se puede observar el resultado. El modelo ha evaluado los daños del accidente, mostrando el porcentaje de precisión del modelo.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="03-05-model-results.png" alt="03 05 model results">
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="02-custom-wb.html" class="query-params-link">2. Crear custom workbench</a></span>
+</nav>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <a class="rhd-logo" href="https://developers.redhat.com" target="_blank"></div>
+</footer>
+<script src="../_/js/vendor/clipboard.js"></script>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

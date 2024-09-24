@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Crear un custom workbench :: Summit-Connect-Madrid-OpenShift-AI-lab</title>
+    <link rel="canonical" href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab/summit-ocpai-lab/02-custom-wb.html">
+    <link rel="prev" href="01-login.html">
+    <link rel="next" href="03-model.html">
+    <meta name="generator" content="Antora 3.0.0">
+    <link rel="stylesheet" href="../_/css/site.css">
+<link rel="icon" href="../_/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://developers.redhat.com" target="_blank"><img
+          src="../_/img/header_logo.png" height="40px" alt="Red Hat Developer Program"></a>
+      <a class="navbar-item" href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab">Summit-Connect-Madrid-OpenShift-AI-lab</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Books</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">CheatSheets</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">CheatSheet A</a>
+            <a class="navbar-item" href="#">CheatSheet B</a>
+            <a class="navbar-item" href="#">CheatSheet C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Upcoming Events</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Event A</a>
+            <a class="navbar-item" href="#">Event B</a>
+            <a class="navbar-item" href="#">Event C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">More Tutorials</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Tutorial A</a>
+            <a class="navbar-item" href="#">Tutorial B</a>
+            <a class="navbar-item" href="#">Tutorial C</a>
+          </div>
+        </div>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="#">Download</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="summit-ocpai-lab" data-version="master">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html" class=" query-params-link">Summit Connect Madrid - OpenShift AI</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="01-login.html">1. Acceder a OpenShift AI</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="02-custom-wb.html">2. Crear custom workbench</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#image">Importar imagen</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#createproj">Crear un proyecto de Data Science</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#createwb">Crear workbench</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#connect">Iniciar el workbench</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="03-model.html">3. Desplegar el modelo</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="03-model.html#import">Importar modelo</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="03-model.html#deploy">Ejecutar modelo</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Summit Connect Madrid - OpenShift AI</span>
+    <span class="version">master</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <span class="title">Summit Connect Madrid - OpenShift AI</span>
+      <ul class="versions">
+        <li class="version is-current">
+          <a href="index.html">master</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">Summit Connect Madrid - OpenShift AI</a></li>
+    <li><a href="02-custom-wb.html">2. Crear custom workbench</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab/edit/master/documentation/modules/ROOT/pages/02-custom-wb.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<article class="doc">
+<h1 class="page">Crear un custom workbench</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>En OpenShift AI, un workbench es un entorno de trabajo contenerizado que se ejecuta como un pod. Los workbench incluyen una colección de liberías comunmente utilizadas en entornos de AI/ML, así como un servidor de JulyperLab.</p>
+</div>
+<div class="paragraph">
+<p>En este laboratorio se va a crear un workbench personalizado que incluya las liberías y paquetes necesarios para implementar un modelo de detección de imágenes. Para la creación de un workbench personalizado, se deberá crear e importar una imagen que contenga el entorno JupyterLab, así como cualquier software adicional necesario para desplegar el modelo.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="image"><a class="anchor" href="#image"></a>Importar imagen personalizada</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Para importar una imagen custom, en el panel de navegación de la izquierda, accede a Settings - Notebook images y luego <code>Import new image</code></p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-01-import.png" alt="02 01 import">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Completa el formulario con los siguientes datos:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Image location: <code>quay.io/acidonpe/ocp-ai-insurance-model:1.0</code></p>
+</li>
+<li>
+<p>Name: <code>Custom insurance model lab</code></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-02-import-image.png" alt="02 02 import image">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El resto de campos pueden dejarse en blanco.A continuación, haz click en <code>Create</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-03-imported-image.png" alt="02 03 imported image">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="createproj"><a class="anchor" href="#createproj"></a>Crear un proyecto de Data Science</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>En Red Hat OpenShift AI, un proyecto de Data Science es la manera de organizar los recursos cuando se trabaja en una aplicación de AI/ML. De manera similar a cómo se utilizan proyectos en OpenShift para otras cargas de trabajo, puedes usar proyectos de Data Science para organizar los diferentes componentes que necesitas para tus aplicaciones de IA.</p>
+</div>
+<div class="paragraph">
+<p>Una vez la imagen personalizada esté subida, se creará un proyecto de Data Science con el que trabajaremos y desplegaremos el modelo de AI/ML.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En el panel de navegación de la izquiera de la consola de OpenShift AI, accede a Data Science Projects:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-04-create-dsproject.png" alt="02 04 create dsproject">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Crea un projecto con el nombre de usuario que tengas:</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>NOTA: Si tu usuario es <code>user1</code>, el proyecto que crearás se llamará <code>user1</code>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>El resto de campos se pueden dejar con los valores por defecto.</p>
+</li>
+<li>
+<p>El formulario deberá quedar así:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-05-ds-project.png" alt="02 05 ds project">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Haz click en <code>Create</code>.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="createwb"><a class="anchor" href="#createwb"></a>Crear workbench</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A continuación, se creará un entorno de trabajo dentro del proyecto creado anteriormente, y donde usaremos esta imagen.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Dentro del proyecto <code>userX</code>, selecciona <code>Create a workbench</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-06-create-wb.png" alt="02 06 create wb">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Completa los campos con la siguiente información:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Name: <code>Lab Workbench</code></p>
+</li>
+<li>
+<p>Image selection: <code>Custom AI image</code></p>
+</li>
+<li>
+<p>Deployment size: <code>Small</code></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>El resto de campos, se pueden dejar con los valores por defecto. El resultado será como el siguiente:</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-07-workbench.png" alt="02 07 workbench">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="connect"><a class="anchor" href="#connect"></a>Iniciar el workbench</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Una vez se haya creado el workbench, espera a que su estado cambie a <code>Running</code>.</p>
+</li>
+<li>
+<p>En cuanto esté corriendo, ya podemos acceder al entorno de trabajo, para ello haz click en <code>Open</code>.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-08-wb-running.png" alt="02 08 wb running">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI.</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Si tu usuario es <code>user1</code>, accede con el usuario <code>user1</code> y contraseña <code>user1</code>.
+</td>
+</tr>
+</table>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A continuación, se deberán aceptar los siguientes permisos.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/02-09-permission.png" alt="02 09 permission">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Una vez aceptado, se mostrará el servidor de JupyterLab.</p>
+</li>
+</ul>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="02-10-juputer-server.png" alt="02 10 juputer server">
+</div>
+</div>
+<div class="paragraph">
+<p>¡Enhorabuena¡ Ya estás listo para desplegar el modelo de AI/ML.</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="01-login.html" class="query-params-link">1. Acceder a OpenShift AI</a></span>
+  <span class="next"><a href="03-model.html" class="query-params-link">3. Desplegar el modelo</a></span>
+</nav>
+</article>
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <a class="rhd-logo" href="https://developers.redhat.com" target="_blank"></div>
+</footer>
+<script src="../_/js/vendor/clipboard.js"></script>
+<script src="../_/js/site.js"></script>
+<script async src="../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
