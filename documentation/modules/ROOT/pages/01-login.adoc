@@ -12,12 +12,14 @@ En una nueva ventana, accede a la siguiente URL e inicia sesión en la consola d
 
 * La URL de Red Hat OpenShift AI: `URL`
 
-Accede a la consola de OpenShift AI con las siguientes credenciales:
+* Accede a la consola de OpenShift AI con las siguientes credenciales:
 
-* Usuario: `userX`
-* Contraseña: `userX`
+** Usuario: `userX`
+** Contraseña: `userX`
 
-image::01-login.png[]
+IMPORTANTE: Sustituir userX por el usuario que le ha sido asignado. 
+
+image::01-01-login.png[]
 
 * Dado que la contraseña es simple, el navegador puede que lance el siguiente mensaje:
 
@@ -27,4 +29,4 @@ image::01-02-warning.png[]
 
 image::01-03-dashboard.png[]
 
- ¡Enhorabuena! Ya estás conectado a OpenShift AI y listo para empezar el laboratorio.
+¡Enhorabuena! Ya estás conectado a OpenShift AI y listo para empezar el laboratorio.

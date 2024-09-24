@@ -15,13 +15,13 @@ image::02-01-import.png[]
 * Completa el formulario con los siguientes datos:
 
 ** Image location: `quay.io/acidonpe/ocp-ai-insurance-model:1.0`
-** Name: `Custom - AI insurance model lab` 
-
-* El resto de campos pueden dejarse en blanco.
-
-* Una vez estén todos los campos, click en `Create`.
+** Name: `Custom insurance model lab` 
 
 image::02-02-import-image.png[]
+
+* El resto de campos pueden dejarse en blanco.A continuación, haz click en `Create`.
+
+image::02-03-imported-image.png[]
 
 [#createproj]
 == Crear un proyecto de Data Science
@@ -30,22 +30,21 @@ En Red Hat OpenShift AI, un proyecto de Data Science es la manera de organizar l
 
 Una vez la imagen personalizada esté subida, se creará un proyecto de Data Science con el que trabajaremos y desplegaremos el modelo de AI/ML.
 
-* En el panel de navegación de la izquiera de la consola de OpenShift AI, accede a Data Science Projects
+* En el panel de navegación de la izquiera de la consola de OpenShift AI, accede a Data Science Projects:
 
-image::02-03-ds-project.png[]
+image::02-04-create-dsproject.png[]
 
 * Crea un projecto con el nombre de usuario que tengas:
 
-** Si tu usuario es `user1`, el proyecto que crearás se llamará `user1`
+NOTA: Si tu usuario es `user1`, el proyecto que crearás se llamará `user1`.
 
 * El resto de campos se pueden dejar con los valores por defecto. 
 
 * El formulario deberá quedar así: 
 
-image::02-04-create-dsp.png[]
+image::02-05-ds-project.png[]
 
 * Haz click en `Create`.
-
 
 [#createwb]
 == Crear workbench
@@ -54,36 +53,37 @@ A continuación, se creará un entorno de trabajo dentro del proyecto creado ant
 
 * Dentro del proyecto `userX`, selecciona `Create a workbench`. 
 
-image::02-05-create-wb.png[]
+image::02-06-create-wb.png[]
 
 * Completa los campos con la siguiente información:
 
-** Name: 
-** Image selection: 
-** Deployment size:
-** CLuster storage:
+** Name: `Lab Workbench`
+** Image selection: `Custom AI image`
+** Deployment size: `Small` 
 
 * El resto de campos, se pueden dejar con los valores por defecto. El resultado será como el siguiente:
 
-<imagen wb>
+image::02-07-workbench.png[]
 
 [#connect]
 == Iniciar el workbench
 
 * Una vez se haya creado el workbench, espera a que su estado cambie a `Running`. 
 
-* Una vez esté corriendo, ya podemos acceder al entorno de trabajo, para ello haz click en `Open`. 
+* En cuanto esté corriendo, ya podemos acceder al entorno de trabajo, para ello haz click en `Open`. 
 
-<imagen wb corriendo>
+image::02-08-wb-running.png[]
 
 * Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI.
 
+NOTA: Si tu usuario es `user1`, accede con el usuario `user1` y contraseña `user1`.
+
 * A continuación, se deberán aceptar los siguientes permisos.
 
-<imagen permisos>
+image::02-09-permission.png[]
 
 * Una vez aceptado, se mostrará el servidor de JupyterLab.
 
-<iamgen jupyter>
+image::02-10-juputer-server.png[]
 
 ¡Enhorabuena¡ Ya estás listo para desplegar el modelo de AI/ML.  
