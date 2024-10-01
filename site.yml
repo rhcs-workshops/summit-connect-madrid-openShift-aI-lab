@@ -26,7 +26,7 @@ asciidoc:
 
 ui:
   bundle:
-    url: https://github.com/atarazana/course-ui/releases/download/v0.1.12c/ui-bundle.zip #Change to make url parameters work EX: USER
+    url: https://github.com/redhat-developer-demos/rhd-tutorial-ui/releases/download/v0.1.10/ui-bundle.zip
     snapshot: true
   supplemental_files:
     - path: ./supplemental-ui
