@@ -4,13 +4,15 @@ include::_attributes.adoc[]
 [#import]
 == Importar modelo
 
-* Para empezar a trabajar con el modelo de detección de imágenes, es necesario importar el repositorio de Git en el que está el código desarrollado. Para ello, hazx click en el icono de Git en el menú de navegación de la izquierda. 
+* Para importar el modelo, el primer paso es clonar el repositorio de Git. Para ello, haz click en el icono de Git en el menú de navegación de la izquierda. 
 
 image::03-01-git-clone.png[]
 
-* Introduce la URL del repositorio de Git: 
-
-  https://github.com/rhcs-workshops/summit-connect-madrid-openshift-ai-lab.git
+[.console-input]
+[source,adoc]
+----
+https://github.com/rhcs-workshops/summit-connect-madrid-openshift-ai-lab.git
+----
 
 image::03-02-repo.png[]
 
@@ -21,9 +23,7 @@ image::03-03-model.png[]
 [#deploy]
 == Ejecutar modelo
 
-* El modelo está desarrollado en un Notebook de Jupyter. El modelo que se va a utilizar en este laboratorio se basa en el modelo `YOLOv8`, que se puede encontrar online en https://yolov8.com/[yolo8].
-
-* Para ejecutar el modelo, si nunca se han ejecutado las celdas del Notebook, haz click en `Restart kernel and Run all Cells` para ejecutar el modelo, y obtener el resultado.
+* Para ejecutar el modelo completo, haz click en `Restart kernel and Run all Cells`, y obtener el resultado.
 
 image::03-04-run-model.png[]
 
@@ -35,3 +35,4 @@ image::03-05-restart-kernel.png[]
 
 image::03-06-model-results.png[]
 
+¡Enhorabuena! Ya has ejecutado el modelo de AI/ML para el reconocimiento de accidentes utilizando una imagen personalizada.

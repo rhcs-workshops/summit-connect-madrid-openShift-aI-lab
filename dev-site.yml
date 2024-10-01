@@ -3,8 +3,8 @@ runtime:
 
 site:
   title: Summit-Connect-Madrid-OpenShift-AI-lab
-  url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab
-  start_page: summit-connect-madrid-openShift-aI-lab::index.adoc
+  url: http://localhost:3000/rhs-build-course/index.html
+  start_page: summit-ocpai-lab::index.adoc
 
 content:
   sources:
@@ -20,7 +20,7 @@ asciidoc:
     - ./lib/tab-block.js
 ui:
   bundle:
-    url: https://github.com/atarazana/course-ui/releases/download/v0.1.12c/ui-bundle.zip #Change to make url parameters work EX: USER
+    url: https://github.com/redhat-developer-demos/rhd-tutorial-ui/releases/download/v0.1.10/ui-bundle.zip
     snapshot: true
   supplemental_files:
     - path: ./supplemental-ui
