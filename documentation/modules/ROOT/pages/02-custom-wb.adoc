@@ -3,8 +3,6 @@ include::_attributes.adoc[]
 
 En OpenShift AI, un workbench es un entorno de trabajo contenerizado que se ejecuta como un pod. Los workbench incluyen una colección de liberías comunmente utilizadas en entornos de AI/ML, así como un servidor de JulyperLab.
 
-En este laboratorio se va a crear un workbench personalizado que incluya las liberías y paquetes necesarios para implementar un modelo de detección de imágenes. Para la creación de un workbench personalizado, se deberá crear e importar una imagen que contenga el entorno JupyterLab, así como cualquier software adicional necesario para desplegar el modelo.
-
 [#image]
 == Importar imagen personalizada
 
@@ -14,44 +12,58 @@ image::02-01-import.png[]
 
 * Completa el formulario con los siguientes datos:
 
-** Image location: `quay.io/acidonpe/ocp-ai-insurance-model:1.0`
-** Name: `Custom insurance model lab` 
+** Image location:
++
+[.console-input]
+[source,adoc]
+----
+quay.io/acidonpe/ocp-ai-insurance-model:1.0
+----
+
+** Name: 
++
+[.console-input]
+[source,adoc]
+----
+Custom AI image
+----
+
 
 image::02-02-import-image.png[]
 
-* El resto de campos pueden dejarse en blanco.A continuación, haz click en `Create`.
+* El resto de campos pueden dejarse en blanco. A continuación, haz click en `Import`.
 
 image::02-03-imported-image.png[]
 
-[#createproj]
-== Crear un proyecto de Data Science
+// [#createproj]
+// == Crear un proyecto de Data Science
 
-En Red Hat OpenShift AI, un proyecto de Data Science es la manera de organizar los recursos cuando se trabaja en una aplicación de AI/ML. De manera similar a cómo se utilizan proyectos en OpenShift para otras cargas de trabajo, puedes usar proyectos de Data Science para organizar los diferentes componentes que necesitas para tus aplicaciones de IA.
+// En Red Hat OpenShift AI, un proyecto de Data Science es la manera de organizar los recursos cuando se trabaja en una aplicación de AI/ML. De manera similar a cómo se utilizan proyectos en OpenShift para otras cargas de trabajo, puedes usar proyectos de Data Science para organizar los diferentes componentes que necesitas para tus aplicaciones de IA.
 
-Una vez la imagen personalizada esté subida, se creará un proyecto de Data Science con el que trabajaremos y desplegaremos el modelo de AI/ML.
+// Una vez la imagen personalizada esté subida, se creará un proyecto de Data Science con el que trabajaremos y desplegaremos el modelo de AI/ML.
 
-* En el panel de navegación de la izquiera de la consola de OpenShift AI, accede a Data Science Projects:
+// * En el panel de navegación de la izquiera de la consola de OpenShift AI, accede a Data Science Projects:
 
-image::02-04-create-dsproject.png[]
+// image::02-04-create-dsproject.png[]
 
-* Crea un projecto con el nombre de usuario que tengas:
+// * Crea un projecto con el nombre de usuario que tengas:
 
-NOTA: Si tu usuario es `user1`, el proyecto que crearás se llamará `user1`.
+// NOTA: Si tu usuario es `user1`, el proyecto que crearás se llamará `user1`.
 
-* El resto de campos se pueden dejar con los valores por defecto. 
+// * El resto de campos se pueden dejar con los valores por defecto. 
 
-* El formulario deberá quedar así: 
+// * El formulario deberá quedar así: 
 
-image::02-05-ds-project.png[]
+// image::02-05-ds-project.png[]
 
-* Haz click en `Create`.
+// * Haz click en `Create`.
 
 [#createwb]
 == Crear workbench
 
-A continuación, se creará un entorno de trabajo dentro del proyecto creado anteriormente, y donde usaremos esta imagen. 
+A continuación, se creará un entorno de trabajo dentro del proyecto _user1_. 
 
-* Dentro del proyecto `userX`, selecciona `Create a workbench`. 
+* Dentro del proyecto `user1`, selecciona `Create a workbench`.
 
 image::02-06-create-wb.png[]
 
@@ -76,8 +88,6 @@ image::02-08-wb-running.png[]
 
 * Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI.
 
-NOTE: Si tu usuario es `user1`, accede con el usuario `user1` y contraseña `user1`.
-
 * A continuación, se deberán aceptar los siguientes permisos.
 
 image::02-09-permission.png[]
@@ -87,4 +97,4 @@ image::02-09-permission.png[]
 image::02-10-jupyter-server.png[]
 
 
-¡Enhorabuena¡ Ya estás listo para desplegar el modelo de AI/ML.  
+¡Enhorabuena! Ya estás listo para desplegar el modelo de AI/ML.  

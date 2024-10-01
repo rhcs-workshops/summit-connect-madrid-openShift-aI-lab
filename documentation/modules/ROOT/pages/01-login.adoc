@@ -1,23 +1,18 @@
 = Acceder a OpenShift AI
 include::_attributes.adoc[]
 
-Para la realización de este labotorio, se ha provisionado un cluster de OpenShift, con OpenShift AI desplegado. 
+Para la realización de este laboratorio, se ha provisionado un cluster de OpenShift, con OpenShift AI desplegado. 
 
 Cada persona que realice este lab, tendrá un usuario propio con el que podrá trabajar. 
 
 [#entorno]
 == Datos del entorno
 
-En una nueva ventana, accede a la siguiente URL e inicia sesión en la consola de OpenShift AI.
+En una nueva ventana, accede a la consola de OpenShift AI con las siguientes credenciales:
 
-* La URL de Red Hat OpenShift AI: `URL`
+** Usuario: `user1`
+** Contraseña: `user1`
 
-* Accede a la consola de OpenShift AI con las siguientes credenciales:
-
-** Usuario: `userX`
-** Contraseña: `userX`
-
-IMPORTANT: Sustituir userX por el usuario que le ha sido asignado. 
 
 image::01-01-login.png[]
 

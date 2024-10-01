@@ -5,9 +5,7 @@
 [.text-center.strong]
 == Descripción del laboratorio
 
-En este laboratorio vamos a trabajar con varias tecnologías de Inteligencia Antificial y Machine Learning de forma combinada, todo ello a través de Openshift AI, para poder producir una solución de valor que implementa un caso de uso de negocio concreto.
-
-Más concretamente, hemos desarrollado un modelo de procesamiento de imágenes que es capaz de detectar un siniestro de vehículos basándose en la información que puede ser obtenida de una foto de un accidente estimando a través de esta información la gravedad del mismo.
+En este laboratorio hemos desarrollado un modelo de AI que se basa en el procesamiento de imágenes capaz de detectar un siniestro de vehículos basándose en la información que puede ser obtenida de una foto de un accidente.
 
 Gracias a Openshift AI, vamos a poder desplegar en minutos un entorno personalizado de ejecución (workbench) que cuenta con todas las herramientas necesarias para ejecutar el modelo, como pueden ser librerias de Python específicas y la solución Jupyter, y analizaremos una imagen para ver como este modelo desarrollado puede evaluar un siniestro.
 
@@ -16,7 +14,3 @@ image::traffic.jpg[]
 == ¿Qué nos llevamos de este laboratorio?
 
 La idea es conocer cómo es posible usar Openshift AI para implementar un caso de uso de Inteligencia Artificial. Para ello, será necesario configurar un entorno de ejecución de modelos personalizado y veremos cómo es el procedimiento para ejecutar un modelo de reconocimiento de imágenes.
-
-
-
-
