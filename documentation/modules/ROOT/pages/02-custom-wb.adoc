@@ -61,7 +61,9 @@ image::02-03-imported-image.png[]
 [#createwb]
 == Crear workbench
 
-A continuación, se creará un entorno de trabajo dentro del proyecto _user1_. 
+A continuación, se creará un entorno de trabajo dentro del proyecto `user1`. Para ello, ve al panel de navegación de la izquierda,  haz click en `Data Science Projects`, y selecciona el project `user1`.
+
+image::02-05-2-select-dsproject.png[]
 
 * Dentro del proyecto `user1`, selecciona `Create a workbench`.
 
@@ -69,7 +71,13 @@ image::02-06-create-wb.png[]
 
 * Completa los campos con la siguiente información:
 
-** Name: `Lab Workbench`
+** Name: 
+[.console-input]
+[source,adoc]
+----
+Lab Workbench
+----
+
 ** Image selection: `Custom AI image`
 ** Deployment size: `Small` 
 

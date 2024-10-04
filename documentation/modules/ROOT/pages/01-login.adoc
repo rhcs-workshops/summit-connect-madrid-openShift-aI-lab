@@ -8,7 +8,7 @@ Cada persona que realice este lab, tendrá un usuario propio con el que podrá t
 [#entorno]
 == Datos del entorno
 
-En una nueva ventana, accede a la consola de OpenShift AI con las siguientes credenciales:
+En una nueva ventana, accede a la consola de OpenShift y haz clic en `lab-users` para iniciar sesión con las siguientes credenciales:
 
 ** Usuario: `user1`
 ** Contraseña: `user1`

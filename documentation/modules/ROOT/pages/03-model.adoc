@@ -16,7 +16,11 @@ https://github.com/rhcs-workshops/summit-connect-madrid-openshift-ai-lab.git
 
 image::03-02-repo.png[]
 
-* Una vez el repositorio esté importado en el servidor de JupyterLab, accede a la carpeta `lab` y abre el modelo llamado `accident-recog.ipynb`.
+* Una vez el repositorio esté importado en el servidor de JupyterLab, accederemos al repositorio haciendo doble click en la carpeta `summit-connect-madrid-openshift-ai-lab`.
+
+image::03-02-02-repo-imported.png[]
+
+* Para ver el modelo con el que se va a trabajar, selecciona la carpeta `lab` y abre el fichero llamado `accident-recog.ipynb` que contiene el modelo.
 
 image::03-03-model.png[]
 
