@@ -72,11 +72,12 @@ image::02-06-create-wb.png[]
 * Completa los campos con la siguiente información:
 
 ** Name: 
-   [.console-input]
-   [source,adoc]
-   ----
-   Lab Workbench
-   ----
++
+[.console-input]
+[source,adoc]
+----
+Lab Workbench
+----
 
 ** Image selection: `Custom AI image`
 ** Deployment size: `Small` 
