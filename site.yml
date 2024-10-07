@@ -2,7 +2,7 @@ runtime:
   cache_dir: ./.cache/antora
 
 site:
-  title: Summit-Connect-Madrid-OpenShift-AI-lab
+  title: Summit Connect Madrid - OpenShift AI
   url: https://github.com/rhcs-workshops/summit-connect-madrid-openShift-ai-lab
   start_page: summit-connect-madrid-openShift-aI-lab::index.adoc
 
