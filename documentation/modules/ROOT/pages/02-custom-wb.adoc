@@ -1,7 +1,7 @@
 = Crear un custom workbench
 include::_attributes.adoc[]
 
-En OpenShift AI, un workbench es un entorno de trabajo contenerizado que se ejecuta como un pod. Los workbench incluyen una colección de liberías comunmente utilizadas en entornos de AI/ML, así como un servidor de JulyperLab.
+En OpenShift AI, un workbench es un entorno de trabajo contenerizado que se ejecuta como un pod. Los workbench incluyen una colección de liberías comunmente utilizadas en entornos de AI/ML, así como un servidor de JupyterLab.
 
 [#image]
 == Importar imagen personalizada
@@ -32,6 +32,8 @@ Custom AI image
 image::02-02-import-image.png[]
 
 * El resto de campos pueden dejarse en blanco. A continuación, haz click en `Import`.
+
+La imagen quedará importada tal y como se muestra a continuación:
 
 image::02-03-imported-image.png[]
 
