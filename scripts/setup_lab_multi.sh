@@ -78,4 +78,6 @@ oc apply -f ./scripts/files/datasciencecluster.yaml
 
 sleep 30 
 
+oc apply -f ./scripts/files/image.yaml
+
 sh ./scripts/check.sh
