@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## This script connects to the OCP cluster. The following commands should be configured with the corresponding credentials.
+
 ## Login
 oc login XXXXXXXX --server=https://api.XXXXXXX:6443 --insecure-skip-tls-verify
 
