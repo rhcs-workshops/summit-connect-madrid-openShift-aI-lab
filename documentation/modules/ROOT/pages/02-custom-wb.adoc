@@ -33,7 +33,7 @@ image::02-02-import-image.png[]
 
 * El resto de campos pueden dejarse en blanco. A continuación, haz click en `Import`.
 
-La imagen quedará importada tal y como se muestra a continuación:
+* La imagen quedará importada tal y como se muestra a continuación:
 
 image::02-03-imported-image.png[]
 
@@ -84,7 +84,7 @@ Lab Workbench
 ** Image selection: `Custom AI image`
 ** Deployment size: `Small` 
 
-* El resto de campos, se pueden dejar con los valores por defecto. El resultado será como el siguiente:
+* El resto de campos, se pueden dejar con los valores por defecto. Comprueba que el resultado sea como el siguiente, y haz click en `Create workbench` para crear el workbench: 
 
 image::02-07-workbench.png[]
 
@@ -97,7 +97,10 @@ image::02-07-workbench.png[]
 
 image::02-08-wb-running.png[]
 
-* Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI.
+* Para acceder al workbench, hay que autenticarse con las credenciales de OpenShift AI. Para ello, haz clic en `lab-users` e inicia sesión con las siguientes credenciales:
+
+** Usuario: `user1`
+** Contraseña: `user1`
 
 * A continuación, se deberán aceptar los siguientes permisos.
 
